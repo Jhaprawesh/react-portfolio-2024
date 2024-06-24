@@ -1,0 +1,140 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f3fbfb;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 940px;
+  margin: auto;
+} */
+.newcard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+}
+.newcard-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.newcard-body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  min-height: 250px;
+}
+.tag {
+  background-color: #ccc;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  padding: 2px 10px;
+  text-transform: uppercase;
+}
+.tag-teal {
+  background-color: #92d4e4;
+}
+.tag-purple {
+  background-color: #3d1d94;
+}
+.tag-pink {
+  background-color: #c62bcd;
+}
+.newcard-body h4 {
+  margin: 10px 0;
+}
+.newcard-body p {
+  font-size: 14px;
+  margin: 0 0 40px 0;
+  font-weight: 500;
+  color: rgb(70, 68, 68);
+}
+.user {
+  display: flex;
+  margin-top: auto;
+}
+.user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+.user-info h5 {
+  margin: 0;
+}
+.user-info small {
+  color: #888785;
+}
+.tag {
+  align-self: flex-start;
+  padding: 0.25em 0.75em;
+  border-radius: 1em;
+  font-size: 0.75rem;
+}
+
+.tag + .tag {
+  margin-left: 0.5em;
+}
+
+.tag-blue {
+  background: #56ccf2;
+  background: linear-gradient(to bottom, #2f80ed, #56ccf2);
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #d1913c;
+  background: linear-gradient(to bottom, #ffd194, #d1913c);
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.user {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.user__image {
+  border-radius: 50%;
+}
+
+.user__info > small {
+  color: #666;
+}
+.newcard:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 2px 40px #d7dfe2;
+}

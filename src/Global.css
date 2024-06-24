@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Roboto+Slab:wght@100;200;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.head {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(./assets/image/main-image-2.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+}
+.text-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#logo_image {
+  width: 20%;
+}
+h5 {
+  color: #3bacb6;
+}
+.carou {
+  object-fit: cover;
+  max-width: 100%;
+  width: 700px;
+  height: 469px;
+  filter: brightness(30%);
+  -webkit-filter: brightness(50%);
+  -moz-filter: brightness(50%);
+  -o-filter: brightness(50%);
+  -ms-filter: brightness(50%);
+}
+.offcanvas {
+  background: gray;
+}
+
+.text_info {
+  position: relative;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-45%, 0%);
+}
+.overlay {
+  transform: translateX(110%);
+  transition: 300ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+.mycard:hover .overlay {
+  transform: none;
+}
+.mycard:hover::before img {
+  filter: blur(4px);
+}
+
+.about {
+  background-color: black;
+}
+.menulist {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  border-radius: 5px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-delay: 0.3ms;
+}
+
+.personal-image {
+  width: 301px;
+  /* width: 50%; */
+  height: 330px;
+  background-size: cover;
+  object-fit: cover;
+}
+.shadow-pop-tr {
+  -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+.text-blur-out {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.touch {
+  background-image: url(./wallpaperflare.com_wallpaper.jpg);
+  background-repeat: no-repeat;
+  height: 300px;
+  max-width: 100%;
+  max-height: 100%;
+  background-attachment: fixed;
+}
+/* top */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 73px;
+  display: none;
+}
+
+#contactus {
+  scroll-behavior: smooth;
+}
+
+.fixed-top {
+  background-color: #fff;
+  scroll-behavior: smooth;
+  transition: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* personal image */
+
+/* animation for name */
+
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  scrollbar-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* skill-style */
+
+#skills {
+  /* background: #1c3553; */
+  padding: 20px 15px 75px 15px;
+  color: #fff;
+}
+
+.skills-text {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background: #1c3553; */
+  font-size: 20px;
+}
+
+.skills-title {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.skills-title.underline:before {
+  width: 40px;
+}
+
+.skills-list {
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+.skill-name:after {
+  background-color: #999797;
+  content: "";
+  display: block;
+  height: 1rem;
+  position: relative;
+  top: 3px;
+  /*top: 1rem;*/
+  width: 100%;
+}
+
+.skill-percent {
+  font-size: 0;
+  height: 1rem;
+  position: relative;
+  top: -0.8rem;
+  transition: 3s linear;
+  width: 0;
+}
+
+/* SKILL BAR COLORS */
+
+.skill-percent-html {
+  background-color: #ff5c00;
+}
+
+.skill-percent-css {
+  background-color: #00b1db;
+}
+
+.skill-percent-jquery {
+  background-color: #ffc100;
+}
+
+.skill-percent-scss {
+  background-color: #ff768e;
+}
+
+.skill-percent-javascript {
+  background-color: #ff8b00;
+}
+
+.skill-percent-wordpress {
+  background-color: #0073b0;
+}
+
+.skill-percent-php {
+  background-color: #464c99;
+}
+
+.skill-percent-git {
+  background-color: #ff5c00;
+}
+
+/* Heading Underline */
+
+.underline {
+  display: inline-block;
+  position: relative;
+}
+
+.underline:before {
+  background-color: #fff;
+  bottom: -15px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 110%;
+}
