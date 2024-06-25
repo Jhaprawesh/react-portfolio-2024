@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./ArticleList.css";
 
+let colors = ["green", "yellow", "red", "pink"];
+
 const ArticleList = ({ articles }) => (
   <>
     <div className="row app">
@@ -20,7 +22,9 @@ const ArticleList = ({ articles }) => (
                 />
               </div>
               <div className="newcard-body">
-                <span className="tag tag-blue">Technology</span>
+                <span className="tag tag-blue" style={{ background: colors }}>
+                  Technology
+                </span>
                 <h4>{article.title}</h4>
                 <p>{article.content[0].substring(0, 100)}...</p>
                 <div className="user">
